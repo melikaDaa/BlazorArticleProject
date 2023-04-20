@@ -1,0 +1,21 @@
+﻿<EditForm Model="categories" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group" style="text-align:right;">
+        <label>نام</label>
+        <div style="width:50%;">
+            <InputText class="form-control" @bind-Value="@categories.Name" />
+            <ValidationMessage For="@(()=>categories.Name)" />
+            <button class="btn btn-success" type="submit">تایید</button>
+
+        </div>
+    </div>
+</EditForm>
+
+@code {
+
+    [Parameter]
+    public Categories categories { get; set; }
+
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+}

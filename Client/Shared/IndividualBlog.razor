@@ -1,0 +1,86 @@
+﻿@inject IArticleRepository ArticleRepository
+<div class="individual-movie-container">
+    <a href="@movieUrl">
+        <img src="@article.Poster" alt="Poster Movie" class="movie-poster" />
+    </a>
+    <p>@article.Title</p>
+    <div>
+        <a class="btn btn-warning">ویرایش </a>
+        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteEmpModal"
+                @onclick="(()=>DeleteConfirm(article.ArticleId))">
+            <i class="fa fa-trash-o"></i>
+            حذف
+        </button>
+    </div>
+</div>
+
+<div class="modal fade" id="deleteEmpModal" style="text-align:right">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="text-align:center;">
+                <h3 class="modal-title">تایید حذف </h3>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true" style="text-align:left;">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tr>
+                        <td>نام </td>
+                        <td>@article.Title</td>
+                    </tr>
+                    <tr>
+                        <td>توضیحات</td>
+                        <td>@article.Sumamary</td>
+                    </tr>
+                    <tr>
+                        <td>حق کپی رایت</td>
+                        <td>@article.InTheater</td>
+                    </tr>
+                    <tr>
+                        <td>تاریخ ثبت</td>
+                        <td>@article.ReleasTime</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" @onclick="(async () => await DeleteEmployee(article.ArticleId))" data-dismiss="modal">حذف</button>
+                <button data-dismiss="modal" class="btn btn-light">لغو</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Article article { get; set; }
+    [Parameter]
+    public EventCallback<Article> DeleteMovie { get; set; }
+
+
+    public Article Article = new Article();
+    List<Article> ArticleList = new List<Article>();
+
+    private string movieUrl = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        movieUrl = $"movie/{article.ArticleId}/{article.Title.Replace(" ", "-")}";
+    }
+    protected void DeleteConfirm(int id)
+    {
+
+        Article = ArticleList.FirstOrDefault(x => x.ArticleId == id);
+
+    }
+
+    protected async Task DeleteEmployee(int id)
+    {
+
+        await ArticleRepository.DeleteArticle(id);
+    
+    
+
+    }
+}

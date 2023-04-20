@@ -1,0 +1,108 @@
+﻿@page "/category"
+@inject NavigationManager navigationManager
+@inject IGenreRepository genreRepository
+@inject IHttpService http
+
+@attribute [Authorize]
+
+<div class="form-group" style="text-align:right;">
+    <button @onclick="SaveMovie" class="btn btn-success">جدید</button>
+</div>
+
+<GenericList List="CateList">
+    <WholeListTemplate>
+        <table class="table table-striped" style="width:50%; font-size:15px;"> 
+            <thead style="text-align:right">
+                <tr>
+
+                    <th> </th>
+                    <th>نام</th>
+
+                </tr>
+            </thead>
+
+            @foreach (var item in CateList)
+            {
+
+                <tr>
+                    <td>@item.Name</td>
+                    <td>
+                        <a class="btn btn-warning" href="/genre/edit/@item.Id">ویرایش</a>
+                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteEmpModal"
+                                @onclick="(()=>DeleteConfirm(item.Id))">
+                            <i class="fa fa-trash-o"></i>
+                            حذف
+                        </button>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </WholeListTemplate>
+</GenericList>
+
+<div class="modal fade" id="deleteEmpModal" style="text-align:right">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="text-align:center;">
+                <h3 class="modal-title">تایید حذف </h3>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true" style="text-align:left;">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tr>
+                        <td>نام</td>
+                        <td>@categories.Name</td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" @onclick="(async () => await DeleteEmployee(categories.Id))" data-dismiss="modal">حذف</button>
+                <button data-dismiss="modal" class="btn btn-light">لغو</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    protected HttpClient Http { get; set; }
+    List<Categories> CateList;
+    public Categories categories = new Categories();
+
+    private void SaveMovie()
+    {
+        navigationManager.NavigateTo("Category/create");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            CateList = await genreRepository.GetGenres();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    protected void DeleteConfirm(int id)
+    {
+
+        categories = CateList.FirstOrDefault(x => x.Id == id);
+
+    }
+
+    protected async Task DeleteEmployee(int id)
+    {
+
+        await genreRepository.DeleteGenre(id);
+        await genreRepository.GetGenres();
+
+    }
+}

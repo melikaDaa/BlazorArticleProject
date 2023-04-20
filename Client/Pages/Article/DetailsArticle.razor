@@ -1,0 +1,59 @@
+﻿@page "/movie/{ArticleId:int}"
+@page "/movie/{ArticleId:int}/{Title}"
+@inject IArticleRepository articleRepository
+@attribute [Authorize]
+<div class="movies-container">
+    <h3>جزیئات</h3>
+
+    @if (model == null)
+    {
+        <text>در حال بارگذاری ...</text>
+    }
+    else
+    {
+        <h2>
+            @model.Article.Title
+        </h2>@if (model.Categories != null)
+        {
+            @for (int i = 0; i < model.Categories.Count; i++)
+            {
+
+                @linkGenres(model.Categories[i])<text> ,  </text>
+            }
+        }
+        <text> | </text> <span> <h4>ReleasTime</h4> @model.Article.ReleasTime.Value.ToString("dd MM yyyy") </span>
+
+        <div style="display: flex">
+            <span style="display: inline-block; margin-right: 5px;">
+                <img src="@model.Article.Poster" alt="@model.Article.Title" style="width: 225px; height: 315px;" />
+            </span>
+        </div>
+
+        <div style="margin-top: 10px">
+            <h3>Summary</h3>
+            <div>
+                @model.Article.Sumamary
+            </div>
+        </div>
+
+    }
+</div>
+
+@code {
+
+    [Parameter]
+    public int ArticleId { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+    ArticleDetailsDto model;
+
+    private RenderFragment<Categories> linkGenres = (genre) =>@<a href="/category?Id=@genre.Id">@genre.Name</a>;
+
+protected async override Task OnInitializedAsync()
+{
+model = await articleRepository.GetDetailArticleDTO(ArticleId);
+}
+
+}

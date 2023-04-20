@@ -1,0 +1,26 @@
+﻿@page "/Category/create"
+@inject IGenreRepository GenreRepository
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+<CategoriesForm categories="categories" OnValidSubmit="Create"></CategoriesForm>
+
+
+@code {
+    private Categories categories = new Categories();
+
+    private async void Create()
+    {
+        Console.WriteLine(categories.Name);
+
+        try
+        {
+            await GenreRepository.CreateGenre(categories);
+            navigationManager.NavigateTo("category");
+        }
+        catch (Exception e)
+        {
+            // ....
+            Console.WriteLine(e.Message);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+﻿@page "/Article"
+@inject IArticleRepository articleRepository
+@attribute [Authorize]
+
+
+<div>
+    <h3 style="text-align:right; font-style:italic;">حق کپی رایت</h3>
+    <BlogList articles="CopyRight" />
+</div>
+<hr />
+<div>
+    <h3 style="text-align:right; font-style:italic;">به روز ترین </h3>
+    <BlogList articles="Relesae" />
+</div>
+
+@code
+{
+    private List<Article> CopyRight;
+    private List<Article> Relesae;
+
+    protected async override Task OnInitializedAsync()
+    {
+        var response = await articleRepository.GetIndexPageDTO();
+        CopyRight = response.Copyright;
+        Relesae = response.ReleasesTime;
+    }
+}

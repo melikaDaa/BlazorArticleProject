@@ -1,0 +1,12 @@
+﻿@page "/"
+
+
+<AuthorizeView>
+    <Authorized>
+        <SurveyPrompt Title="خوش آمدید" />
+    </Authorized>
+    <NotAuthorized>
+
+        <SurveyPrompt Title="برای ثبت مقاله ابتدا وارد شوید" />
+    </NotAuthorized>
+</AuthorizeView>

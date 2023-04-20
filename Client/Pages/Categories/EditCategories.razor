@@ -1,0 +1,34 @@
+﻿@page "/genre/edit/{GenreId:int}"
+@inject IGenreRepository genreRepository
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+<h3>ویرایش دسته بندی</h3>
+@if (categories != null)
+{
+    <CategoriesForm categories="categories" OnValidSubmit="Edit" />
+}
+
+@code {
+    [Parameter] public int GenreId { get; set; }
+
+    public Categories categories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            categories = await genreRepository.GetGenre(GenreId);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    private async Task Edit()
+    {
+        await genreRepository.UpdateGenre(categories);
+        navigationManager.NavigateTo("category");
+    }
+}

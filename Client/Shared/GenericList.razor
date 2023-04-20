@@ -1,0 +1,65 @@
+﻿@typeparam TItem
+<div style="direction:rtl">
+@if (List == null)
+{
+    @*     <img src="https://www.micfootball.com/wp-content/uploads/2017/10/loading-gear.gif" /> *@
+    @if (NullTemplate != null)
+    {
+        <p style="color: red">قالب پیش فرض</p>
+        @NullTemplate
+    }
+    else
+    {
+        <p style="color:forestgreen">در حال بارگذاری</p>
+
+    }
+}
+else if (List.Count == 0)
+{
+    @if (EmptyTemplate != null)
+    {
+        <p style="color: red">قالب پیش فرض آیتمی پیدا نکرد</p>
+
+        @EmptyTemplate
+    }
+    else
+    {
+        <p style="color:forestgreen">چیزی برای نمایش وجود ندارد</p>
+
+    }
+}
+else
+{
+
+    if (ElementTemplate != null)
+    {
+        @foreach (var element in List)
+        {
+            @ElementTemplate(element)
+        }
+    }
+    else
+    {
+        @WholeListTemplate
+    }
+}
+    </div>
+@code{
+
+
+    [Parameter]
+    public RenderFragment NullTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment EmptyTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem> ElementTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment WholeListTemplate { get; set; }
+
+
+    [Parameter]
+    public List<TItem> List { get; set; }
+}
