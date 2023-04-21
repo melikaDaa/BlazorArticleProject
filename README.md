@@ -7,6 +7,10 @@
 
 <h1 color="blue" align="center" >Blazor WASM Article Project</h1>
 
+![My Image](../images/Result.png)
+
+
+
 <h2>Abstract</h2>
     <div style="text-align: justify;text-justify: inter-word;">
 Welcome to the Blazor app building Article Project!
