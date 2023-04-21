@@ -7,7 +7,7 @@
 
 <h1 color="blue" align="center" >Blazor WASM Article Project</h1>
 
-![Result](/Images/Result.png)
+![Result](https://raw.githubusercontent.com/MelikaDaa/BlazorArticleProject/master/../Images/Result.png "Result")
 
 
 <h2>Abstract</h2>
