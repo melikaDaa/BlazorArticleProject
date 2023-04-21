@@ -7,7 +7,11 @@
 
 <h1 color="blue" align="center" >Blazor WASM Article Project</h1>
 
-![My Image](Images/Result.png)
+<img
+  src="/Images/Result.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
 <h2>Abstract</h2>
