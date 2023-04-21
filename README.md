@@ -8,7 +8,7 @@
 <h1 color="blue" align="center" >Blazor WASM Article Project</h1>
 
 <img
-  src="/Images/Result.png"
+  src="../Images/Result.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -23,7 +23,7 @@ we used entityframework core and Identity. FutherMore we use api to get and show
  </div>
  
 
-<h2>>Blazor WASM Article Project</h2>
+<h2>Blazor WASM Article Project</h2>
  <ul>
   <li>EntityFrameWork Core 5</li>
   <li>Asp.net Identity</li>
