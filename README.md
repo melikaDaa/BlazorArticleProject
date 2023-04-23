@@ -15,7 +15,7 @@
 Welcome to the Blazor app building Article Project!
 
 Blazor is a single-page app framework for building client-side web apps using .NET and WebAssembly. In this app we will build a complete Blazor app and learn about the various Blazor framework features along the way.
-we used entityframework core and Identity. FutherMore we use api to get and show data and used Asp.net core Identity for authentication and autherize. and also localstorage service to save token.
+we used entityframework core and Identity. FutherMore we use api to get and show data and used Asp.net core Identity for Authentication And Authorization . and also localstorage service to save token.
  </div>
  
 
