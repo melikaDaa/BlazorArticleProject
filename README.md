@@ -24,6 +24,6 @@ we used entityframework core and Identity. FutherMore we use api to get and show
   <li>EntityFrameWork Core 5</li>
   <li>Asp.net Identity</li>
   <li>JWT Token</li>
- 
+ <li></li>
 </ul> 
 
