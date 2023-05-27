@@ -182,3 +182,4 @@ D:\New folder\Blazor\MyProject\Server\bin\Debug\net5.0\DNTPersianUtils.Core.dll
 D:\New folder\Blazor\MyProject\Server\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\New folder\Blazor\MyProject\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\New folder\Blazor\MyProject\Server\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\New folder\Blazor\MyProject\Server\bin\Debug\net5.0\Blazorise.dll

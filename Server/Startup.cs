@@ -16,6 +16,7 @@ using System;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using MyProject.Server.Utilities;
 
 namespace MyProject.Server
 {
@@ -32,13 +33,17 @@ namespace MyProject.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+     
+
+
+
             services.AddDbContext<ApplicationDbContext>(options =>
           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
            .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
-
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             var jwtSettings = Configuration.GetSection("JWTSettings");
             services.AddAuthentication(opt =>
@@ -63,6 +68,7 @@ namespace MyProject.Server
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,7 +89,6 @@ namespace MyProject.Server
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
-
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

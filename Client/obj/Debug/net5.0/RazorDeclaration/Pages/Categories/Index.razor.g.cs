@@ -161,7 +161,7 @@ using DNTPersianUtils.Core.IranCities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 71 "D:\New folder\Blazor\MyProject\Client\Pages\Categories\Index.razor"
+#line 73 "D:\New folder\Blazor\MyProject\Client\Pages\Categories\Index.razor"
        
     protected HttpClient Http { get; set; }
     List<Categories> CateList;

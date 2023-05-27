@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyProject.Server.Utilities;
+using MyProject.Shared.DTo;
 
 namespace MyProject.Server.Controllers
 {
@@ -14,18 +16,24 @@ namespace MyProject.Server.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
+        private ICategoryRepository _categoryRepository;
+
         private readonly ApplicationDbContext Context;
 
-        public CategoryController(ApplicationDbContext context)
+        public CategoryController(ApplicationDbContext context, ICategoryRepository categoryRepository)
         {
             this.Context = context;
+            _categoryRepository = categoryRepository;
         }
-        [HttpGet("GetCategory")]
-        [HttpGet]
-        public async Task<List<Categories>> Get()
-        {
-            return await Context.Categories.ToListAsync();
-        }
+
+           [HttpGet]
+          public async Task<ActionResult<List<Categories>>> Get([FromQuery]PaginationDto pagingParameters)
+          {
+              var queryable = Context.Categories.AsQueryable();
+              await HttpContext.InsertPaginationParamertInResponse(queryable, pagingParameters.QuantityPerPage);
+              return await queryable.Paginate(pagingParameters).ToListAsync();
+          }
+      
         [HttpGet("{id}")]
         public async Task<ActionResult<Categories>> Get(int id)
         {

@@ -692,3 +692,13 @@ D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\Razor\Shared\BlogList.raz
 D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\Razor\Shared\IndividualBlog.razor.g.cs
 D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Article\DetailsArticle.razor.g.cs
 D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\Razor\Pages\Article\DetailsArticle.razor.g.cs
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Categories\IndexPaging.razor.g.cs
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\Razor\Pages\Categories\IndexPaging.razor.g.cs
+D:\New folder\Blazor\MyProject\Client\bin\Debug\net5.0\wwwroot\_framework\Blazorise.dll.gz
+D:\New folder\Blazor\MyProject\Client\bin\Debug\net5.0\wwwroot\_framework\Blazorise.dll
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\build-gz\yFrG3yW+.gz
+D:\New folder\Blazor\MyProject\Client\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+D:\New folder\Blazor\MyProject\Client\bin\Debug\net5.0\wwwroot\_framework\Newtonsoft.Json.dll
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\build-gz\ngjwYXmc.gz
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\RazorDeclaration\Shared\Pagination.razor.g.cs
+D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\Razor\Shared\Pagination.razor.g.cs

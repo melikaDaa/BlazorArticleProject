@@ -14,7 +14,7 @@ using System.Globalization;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using Blazorise;
 namespace MyProject.Client
 {
     public class Program
@@ -40,7 +40,7 @@ namespace MyProject.Client
             builder.Services.AddScoped<IHttpService, HttpService>();
             builder.Services.AddScoped<IGenreRepository, GenreRepository>();
             builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
-     
+            
             await builder.Build().RunAsync();
         }
     }

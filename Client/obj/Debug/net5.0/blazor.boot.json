@@ -8,6 +8,7 @@
   "resources": {
     "assembly": {
       "Blazored.LocalStorage.dll": "sha256-5Mmb3rkofuJkj2sUYYm80IUBRwC8QQO8CziqiSwsMgg=",
+      "Blazorise.dll": "sha256-Ldu3fJI0\/93\/2QsMj64Onl0uxc6zqYR1f6AGgwSxrYo=",
       "Bunit.Core.dll": "sha256-zovgNsbcjw0E1mKARotcbS2KOf6eBmcW1ZoYMMtVIQo=",
       "DNTPersianComponents.Blazor.dll": "sha256-oP4Jy7ncbA8JF+U6MmOUvxUaS7gtzx2c03TrKZ2Qv9g=",
       "DNTPersianUtils.Core.dll": "sha256-23slIPRDjTR\/V4uByLJJUPjW+1UpmpMD6DdfrJQ+qUg=",
@@ -36,6 +37,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-pr6L2mjcqc8D0q4a8E717JbHBm5iEM4PFAo1DBJmaUg=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-wm\/PyT01CAndytn\/B\/egrjENN3gkDMsMDaFon1TwCHA=",
+      "Newtonsoft.Json.dll": "sha256-jB3VwYS04ufq0Glx\/z68tGeDvpciktHesQYXRDabTYA=",
       "System.IO.Pipelines.dll": "sha256-\/C5xhI+m3Aqrcjxy\/TauLyqv\/\/5l8WEW3rXFtVlNhy8=",
       "Blazor.FileReader.dll": "sha256-GgPlnBZekgBbgO5ZcpY5ih1fLIyoU+XRIrRktlW7gcc=",
       "Microsoft.CSharp.dll": "sha256-PpkoBrb5GDDzBCVjEGJ15VkONpHLxk8ZZ3uc0eDYPaY=",
@@ -203,13 +205,13 @@
       "mscorlib.dll": "sha256-zMI\/dXK7DoZZ9Qm9U9\/jRN4iQ9Ss3w8\/rwQQxC6SW9Y=",
       "netstandard.dll": "sha256-W3q3PN+lpRB+tRJEIhtMgYOGFv0pauEeeCS9iIRkKAM=",
       "System.Private.CoreLib.dll": "sha256-9rUJv1mXEQdGt\/kWiJ1ITPPzp3cAi3lSmqHVTisp7w0=",
-      "MyProject.Shared.dll": "sha256-Wms3epCg\/QXTdEuuyf0XQACEjlmyRcqwmdidNgnzTQc=",
-      "MyProject.Client.dll": "sha256-5sp\/La5bOZ\/B\/9t4g0lEJg67sWT3K4aWqe8s+f3cfbc="
+      "MyProject.Shared.dll": "sha256-l6ZQbV19FnnMyjxgbIjv5ly2\/Ja2GHK4gS34SZzY3Bg=",
+      "MyProject.Client.dll": "sha256-87eqhIcYYRV74oNf8QweH4OrjvLQOu+pDYf+PbdgLZw="
     },
     "lazyAssembly": null,
     "pdb": {
-      "MyProject.Shared.pdb": "sha256-SGj1ntAvRvMk7D8bS2+IJaCXb9mVrAS44AP+GIyCENM=",
-      "MyProject.Client.pdb": "sha256-5nI5cxhvJUlYP8WKGQltDieN0ooCmjzEfHrucXW9EFI="
+      "MyProject.Shared.pdb": "sha256-S2bsswwqYFbbVdMJ4KsQ+WTqyIlIk4XkNxX83LsjCwo=",
+      "MyProject.Client.pdb": "sha256-14tK+mGbtS1ggeEVVV3StNZecx1CkfhromWVf7HZOT4="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-8oJip361m8OrfLRJOuIeswWKaoxtT27\/wINCxhn+s4c=",

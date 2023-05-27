@@ -8,15 +8,15 @@
 <div class="form-group" style="text-align:right;">
     <button @onclick="SaveMovie" class="btn btn-success">جدید</button>
 </div>
-
 <GenericList List="CateList">
     <WholeListTemplate>
         <table class="table table-striped" style="width:50%; font-size:15px;"> 
             <thead style="text-align:right">
                 <tr>
 
-                    <th> </th>
+                    <th>شماره</th>
                     <th>نام</th>
+                    <th>عملیات</th>
 
                 </tr>
             </thead>
@@ -25,11 +25,12 @@
             {
 
                 <tr>
+                    <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>
                         <a class="btn btn-warning" href="/genre/edit/@item.Id">ویرایش</a>
                         <button class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteEmpModal"
-                                @onclick="(()=>DeleteConfirm(item.Id))">
+                                @onclick="(() => DeleteConfirm(item.Id))">
                             <i class="fa fa-trash-o"></i>
                             حذف
                         </button>
@@ -41,6 +42,7 @@
         </table>
     </WholeListTemplate>
 </GenericList>
+
 
 <div class="modal fade" id="deleteEmpModal" style="text-align:right">
     <div class="modal-dialog">

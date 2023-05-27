@@ -153,7 +153,7 @@ using DNTPersianUtils.Core.IranCities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 58 "D:\New folder\Blazor\MyProject\Client\Shared\NavMenu.razor"
+#line 67 "D:\New folder\Blazor\MyProject\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

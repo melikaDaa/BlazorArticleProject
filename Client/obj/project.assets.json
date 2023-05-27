@@ -16,6 +16,121 @@
           "lib/net5.0/Blazored.LocalStorage.dll": {}
         }
       },
+      "Blazorise/0.9.3.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Blazorise.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Blazorise.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/de.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/en.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/es.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/fr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/hr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/it.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/nl.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/pt.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/de.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/en.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/es.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/fr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/hr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/it.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/nl.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/pt.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/compilerconfig.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/Blazorise.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.props": {}
+        }
+      },
+      "Blazorise.DataGrid/1.2.3": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Blazorise.DataGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.DataGrid.props": {}
+        }
+      },
       "bunit.core/1.1.5": {
         "type": "package",
         "dependencies": {
@@ -369,6 +484,15 @@
         },
         "runtime": {
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "System.IO.Pipelines/5.0.2": {
@@ -434,6 +558,121 @@
           "lib/net5.0/Blazored.LocalStorage.dll": {}
         }
       },
+      "Blazorise/0.9.3.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Blazorise.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Blazorise.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/de.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/en.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/es.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/fr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/hr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/it.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/nl.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/Carousel/pt.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/de.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/en.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/es.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/fr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/hr.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/it.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/nl.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/Resources/Localization/FileEdit/pt.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/compilerconfig.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/Blazorise.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.props": {}
+        }
+      },
+      "Blazorise.DataGrid/1.2.3": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Blazorise.DataGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.DataGrid.props": {}
+        }
+      },
       "bunit.core/1.1.5": {
         "type": "package",
         "dependencies": {
@@ -789,6 +1028,15 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "System.IO.Pipelines/5.0.2": {
         "type": "package",
         "compile": {
@@ -851,6 +1099,83 @@
         "icon.png",
         "lib/net5.0/Blazored.LocalStorage.dll",
         "lib/netstandard2.1/Blazored.LocalStorage.dll"
+      ]
+    },
+    "Blazorise/0.9.3.8": {
+      "sha512": "Am/Gq5QcUg/lV1AN43NbtuP6u+8OzpMwhbPwvI2B55qTfwU7ZsBaT5t5UV4gGqjpv8lOMglv9aUM4167hwGrRQ==",
+      "type": "package",
+      "path": "blazorise/0.9.3.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.0.9.3.8.nupkg.sha512",
+        "blazorise.nuspec",
+        "build/Blazorise.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.props",
+        "buildTransitive/Blazorise.props",
+        "content/Resources/Localization/Carousel/de.json",
+        "content/Resources/Localization/Carousel/en.json",
+        "content/Resources/Localization/Carousel/es.json",
+        "content/Resources/Localization/Carousel/fr.json",
+        "content/Resources/Localization/Carousel/hr.json",
+        "content/Resources/Localization/Carousel/it.json",
+        "content/Resources/Localization/Carousel/nl.json",
+        "content/Resources/Localization/Carousel/pt.json",
+        "content/Resources/Localization/FileEdit/de.json",
+        "content/Resources/Localization/FileEdit/en.json",
+        "content/Resources/Localization/FileEdit/es.json",
+        "content/Resources/Localization/FileEdit/fr.json",
+        "content/Resources/Localization/FileEdit/hr.json",
+        "content/Resources/Localization/FileEdit/it.json",
+        "content/Resources/Localization/FileEdit/nl.json",
+        "content/Resources/Localization/FileEdit/pt.json",
+        "content/compilerconfig.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/de.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/en.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/es.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/fr.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/hr.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/it.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/nl.json",
+        "contentFiles/any/net5.0/Resources/Localization/Carousel/pt.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/de.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/en.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/es.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/fr.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/hr.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/it.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/nl.json",
+        "contentFiles/any/net5.0/Resources/Localization/FileEdit/pt.json",
+        "contentFiles/any/net5.0/compilerconfig.json",
+        "lib/net5.0/Blazorise.dll",
+        "lib/net5.0/Blazorise.xml",
+        "staticwebassets/blazorise.css",
+        "staticwebassets/blazorise.js"
+      ]
+    },
+    "Blazorise.DataGrid/1.2.3": {
+      "sha512": "BykNUblf1oEaJOp+g6BB3JqYHpvFl30sOf4rVF2+t9Hdvn0czS3HOhqJacl/L4pLN6aCcJuir2Zq7JcpEEtuBA==",
+      "type": "package",
+      "path": "blazorise.datagrid/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.datagrid.1.2.3.nupkg.sha512",
+        "blazorise.datagrid.nuspec",
+        "build/Blazorise.DataGrid.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.DataGrid.props",
+        "buildTransitive/Blazorise.DataGrid.props",
+        "lib/net6.0/Blazorise.DataGrid.dll",
+        "lib/net6.0/Blazorise.DataGrid.xml",
+        "lib/net7.0/Blazorise.DataGrid.dll",
+        "lib/net7.0/Blazorise.DataGrid.xml",
+        "staticwebassets/datagrid.js"
       ]
     },
     "bunit.core/1.1.5": {
@@ -1440,6 +1765,36 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.IO.Pipelines/5.0.2": {
       "sha512": "Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
       "type": "package",
@@ -1517,12 +1872,15 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Blazored.LocalStorage >= 4.0.0",
+      "Blazorise >= 0.9.3.8",
+      "Blazorise.DataGrid >= 1.2.3",
       "DNTPersianComponents.Blazor >= 1.0.0",
       "Markdig >= 0.30.4",
       "Microsoft.AspNetCore.Components.Authorization >= 5.0.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.17",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.17",
       "MyProject.Shared >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.3",
       "System.Net.Http.Json >= 5.0.0",
       "Tewr.Blazor.FileReader >= 1.6.0.20166"
     ]
@@ -1579,6 +1937,14 @@
             "target": "Package",
             "version": "[4.0.0, )"
           },
+          "Blazorise": {
+            "target": "Package",
+            "version": "[0.9.3.8, )"
+          },
+          "Blazorise.DataGrid": {
+            "target": "Package",
+            "version": "[1.2.3, )"
+          },
           "DNTPersianComponents.Blazor": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -1599,6 +1965,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.17, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "System.Net.Http.Json": {
             "target": "Package",

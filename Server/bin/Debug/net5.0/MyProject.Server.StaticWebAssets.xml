@@ -2,5 +2,7 @@
   <ContentRoot BasePath="/" Path="D:\New folder\Blazor\MyProject\Client\bin\Debug\net5.0\wwwroot\" />
   <ContentRoot BasePath="/" Path="D:\New folder\Blazor\MyProject\Client\obj\Debug\net5.0\scopedcss\bundle\" />
   <ContentRoot BasePath="/" Path="D:\New folder\Blazor\MyProject\Client\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\europe stock\.nuget\packages\blazorise\0.9.3.8\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.DataGrid" Path="C:\Users\europe stock\.nuget\packages\blazorise.datagrid\1.2.3\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/Tewr.Blazor.FileReader" Path="C:\Users\europe stock\.nuget\packages\tewr.blazor.filereader\1.6.0.20166\build\..\staticwebassets\" />
 </StaticWebAssets>

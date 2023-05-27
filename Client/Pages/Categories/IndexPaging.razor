@@ -1,0 +1,74 @@
+﻿@page "/Category/Index"
+@inject HttpClient http
+@using System.IO
+@using System.Text.Json
+@attribute [Authorize]
+
+<Pagination TotalPageQuantity="totalpageQuantity" CurrentPage="currentpage" Radius="2"
+            SelectPage="selectedPage"></Pagination>
+
+<input type="number" min="1" max="50"
+       @bind-value="quantityPage" @oninput="() => LoadCate( quantityPage)" style="position: static; " />
+
+<GenericList List="categories">
+    <WholeListTemplate>
+        <table class="table table-striped" style="width:50%; font-size:15px;">
+            <thead>
+                <tr>
+
+                    <th>شماره</th>
+                    <th>نام</th>
+
+
+                </tr>
+            </thead>
+
+            @foreach (var item in categories)
+            {
+
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+
+
+                </tr>
+            }
+
+        </table>
+    </WholeListTemplate>
+</GenericList>
+
+@code{
+
+    List<Categories> categories;
+    private int totalpageQuantity;
+    private int currentpage = 1;
+    public int quantityPage = 0;
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCate();
+    }
+
+    private async Task selectedPage(int page)
+    {
+        currentpage = page;
+        await LoadCate(page);
+    }
+    async Task LoadCate(int page = 1)
+    {
+        var httpResponse = await http.GetAsync($"api/Category?page={page}&quantityPerPage={quantityPage}");
+        if (httpResponse.IsSuccessStatusCode)
+        {
+            totalpageQuantity = int.Parse((httpResponse.Headers.GetValues("pagesQuantity").FirstOrDefault()));
+            var responseString = await httpResponse.Content.ReadAsStringAsync();
+            categories = JsonSerializer.Deserialize<List<Categories>>(responseString,
+                new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+
+        }
+        else
+        {
+            //handle error
+        }
+    }
+
+}

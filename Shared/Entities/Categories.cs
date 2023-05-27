@@ -11,8 +11,10 @@ namespace MyProject.Shared.Entities
     {
         public int Id { get; set; }
         [Display(Name = "عنوان")]
+
         [Required(ErrorMessage = "لطفا مقدار وارد نمایید")]
         public string Name { get; set; }
+
         public virtual  Article Articles { get; set; }
     }
 }
