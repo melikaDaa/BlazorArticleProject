@@ -28,7 +28,9 @@ we used entityframework core and Identity. FutherMore we use api to get and show
 </ul> 
 
 <hr/>
- Add Paging Feature in Blazor & Web Api
- ![output](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output.png" "output")
+ <h3> Add Paging Feature in Blazor & Web Api</h3>
  
-  ![output1](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output1.png" "output1")
+ 
+  <img  src=https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output.png" width="327"  height="227" />
+   <img  src=https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output1.png" width="327"  height="227" />
+
