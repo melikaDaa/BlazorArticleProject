@@ -29,5 +29,5 @@ we used entityframework core and Identity. FutherMore we use api to get and show
 
 <hr/>
  Add Paging Feature in Blazor & Web Api
- ![Result](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output.png "output")
-  ![Result](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output1.png "output1")
+ ![output](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output.png "output")
+  ![output1](https://raw.githubusercontent.com/melikaDaa/BlazorArticleProject/master/Client/wwwroot/Images/output1.png "output1")
